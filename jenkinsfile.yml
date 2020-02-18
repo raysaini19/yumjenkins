@@ -2,7 +2,7 @@ agent:
 
 
   tools:
-    maven : maven_3.0.1
+    maven : maven
     jdk : jdk8
 
 configuration:
