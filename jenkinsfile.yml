@@ -27,17 +27,17 @@ environment:
 
 
 stages:
-  - name: stage1
+   name: stage1
     agent: any
     steps:
-      - sh:
+       sh:
           script: "scripts/hello"
-      - sh: "scripts/hello"
-      - sleep:
+      sh: "scripts/hello"
+      sleep:
           time: 2
 
-      - sleep: 2
-      - junit:
+      sleep: 2
+      junit:
           testResults: "target/**.xml"
           allowEmptyResults: true
           testDataPublishers:
@@ -48,9 +48,9 @@ stages:
 
 
 
-    post:
-      failure:
-        - sh: "scripts/hello"
+post:
+  failure:
+     - sh: "scripts/hello"
 post:
   always:
     - sh: "scripts/hello"
