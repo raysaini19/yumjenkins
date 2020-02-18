@@ -25,13 +25,6 @@ environment:
     variable_2: value_2
 
 
-  credentials:
-    - credentialId : fileCredentialId
-      variable : FILE
-
-
-    - credentialId : dummyGitRepo
-      variable : LOGIN
 
 stages:
   - name: stage1
