@@ -49,7 +49,7 @@ stages:
 
 post:
   failure:
-     - sh: "scripts/hello"
+      sh: "scripts/hello"
 post:
   always:
-    - sh: "scripts/hello"
+     sh: "scripts/hello"
